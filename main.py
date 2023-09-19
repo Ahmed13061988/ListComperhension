@@ -17,3 +17,8 @@ print(new_range)
 
 con_new_numbers = [num * 2 for num in numbers if num > 3]
 print(con_new_numbers)
+
+names = ["Ahmed", "Ali", "Hussein"]
+
+cap_case_names = [name.upper() for name in names if len(name) > 3]
+print(cap_case_names)
