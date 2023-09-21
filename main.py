@@ -24,4 +24,6 @@ names = ["Ahmed", "Ali", "Hussein", "Atyaf", "Salwa", "Rami"]
 # cap_case_names = [name.upper() for name in names if len(name) > 3]
 # print(cap_case_names)
 new_dict = {student: random.randint(1, 100) for student in names}
-print(new_dict)
+
+passed_students = {student: score for (student, score) in new_dict.items() if score > 50}
+print(passed_students)
