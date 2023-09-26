@@ -48,5 +48,5 @@ student_data_frame = pandas.DataFrame(student_dict)
 #     print(key, value)
 
 for (index, data) in student_data_frame.iterrows():
-    print(index, data)
+    print(data.student, data.score)
 
