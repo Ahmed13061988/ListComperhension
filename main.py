@@ -41,4 +41,12 @@ for (key, value) in student_dict.items():
 
 student_data_frame = pandas.DataFrame(student_dict)
 
-print(student_data_frame)
+
+
+#looping over dataFrame
+# for (key, value) in student_data_frame.items():
+#     print(key, value)
+
+for (index, data) in student_data_frame.iterrows():
+    print(index, data)
+
