@@ -34,4 +34,5 @@ student_dict = {
 }
 
 for (key, value) in student_dict.items():
-    print(key)
+    for val in value:
+        print(val)
