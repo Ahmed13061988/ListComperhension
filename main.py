@@ -1,4 +1,6 @@
 import random
+import pandas
+
 # numbers = [1, 2, 3, 4, 5, 6, 7]
 #
 # new_numbers = [number + 2 for number in numbers]
@@ -35,4 +37,8 @@ student_dict = {
 
 for (key, value) in student_dict.items():
     for val in value:
-        print(val)
+        print()
+
+student_data_frame = pandas.DataFrame(student_dict)
+
+print(student_data_frame)
