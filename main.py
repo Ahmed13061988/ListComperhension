@@ -19,11 +19,19 @@ import random
 # con_new_numbers = [num * 2 for num in numbers if num > 3]
 # print(con_new_numbers)
 
-names = ["Ahmed", "Ali", "Hussein", "Atyaf", "Salwa", "Rami"]
+# names = ["Ahmed", "Ali", "Hussein", "Atyaf", "Salwa", "Rami"]
+#
+# # cap_case_names = [name.upper() for name in names if len(name) > 3]
+# # print(cap_case_names)
+# new_dict = {student: random.randint(1, 100) for student in names}
+#
+# passed_students = {student: score for (student, score) in new_dict.items() if score > 50}
+# print(passed_students)
 
-# cap_case_names = [name.upper() for name in names if len(name) > 3]
-# print(cap_case_names)
-new_dict = {student: random.randint(1, 100) for student in names}
+student_dict = {
+    "student": ["Ahmed", "Rami", "Atyaf"],
+    "score": [90, 100, 70]
+}
 
-passed_students = {student: score for (student, score) in new_dict.items() if score > 50}
-print(passed_students)
+for (key, value) in student_dict.items():
+    print(key)
